@@ -13,6 +13,9 @@ I am making this list so I can make sure I have studied them before any intervie
 4. What is hoisting?
 5. What are closures, and describe a time where you would use it.
 6. Describe asynchronous js vs async. 
+
+Code usually get executed in a linear fashion from top to bottom, with functions getting added to the callstack. Async javascript allows code to keep progressing, even as it waits for previously called functions to finish. This might be necessary due to a fetch request, or a timeout function, or something else that requires a long wait time.
+
 7. Describe what happens when a script is run. (explain global execution context, event loops, code blocking tasks queue, the stack, etc). 
 8. How would you setup/define a class component in react? 
 9. Explain the four pillars of OOP. 
