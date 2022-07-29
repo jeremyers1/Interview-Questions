@@ -33,7 +33,7 @@ E.g., this is why arrays, strings, etc, all have built-in methods. These are fro
 
 11. What goes in the head tag? 
 12. How do you debug? 
-13. What are promises? 
+13. What are promises and what are the possible outcomes of a promise? 
 14. What are 3 ways to create an object in js?
 https://dzone.com/articles/easy-javascript-part-13-four-ways-to-create-object 
 
@@ -70,3 +70,4 @@ b. Use a CDN
 c. Async JS 
 d. 
 
+17. Describe how you use async and await.
