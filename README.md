@@ -55,7 +55,7 @@ b. With an object function in connection with Object.create()
     let newObject = New ObjectTemplate(, params):
     New, by default, includes BOTH the constructor and return statements from the ObjectTemplate, so you don't have to write them into the ObjectTemplate
   
-  d. BONUS: With a class, and then New
+  d. BONUS (new with ES6): With a class (including a constructor and methods), and then New
   
 15. What does the NEW keyword do?
 
