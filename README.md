@@ -23,11 +23,13 @@ Code usually get executed in a linear fashion from top to bottom, with functions
 9. Explain the four pillars of OOP. 
 10. What does prototype mean, and explain prototype chaining.
 
-A prototype is simply a property on a function (or object??) that points to an object. 
-When added to an object, it sends JS to look to the prototype for any properties that failed in the lookup
-Helpful: https://www.freecodecamp.org/news/a-beginners-guide-to-javascripts-prototype/ 
+A prototype is simply a property on an object (and remember, everything is an object in JS) that points to an object. 
+When invoked on an object, the code sends JS to look to the first prototype for any properties that failed in the lookup
+Very Helpful: https://www.freecodecamp.org/news/a-beginners-guide-to-javascripts-prototype/ 
 
 Prototype chaining means that the code looks on the instance of the object for the property that has been called. If it fails to find it, it looks on the prototype of that object. If it is not found there, it looks on the prototype's prototype, and so on, until there are no prototypes left. If the property is never located, then it returns undefined. 
+
+E.g., this is why arrays, strings, etc, all have built-in methods. These are from the object prototypes. 
 
 11. What goes in the head tag? 
 12. How do you debug? 
