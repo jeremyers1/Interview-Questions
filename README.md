@@ -14,6 +14,14 @@ PLEASE NOTE: These answers might be wrong. I add to them as I find information i
 3. What is currying and how is it helpful for programming?
 4. What is hoisting?
 5. What are closures, and describe a time where you would use it.
+
+A closure is a link between a function and its outer lexical environment. Every function has closure, in that it can access the scope of the environment in which it was created. If that environment was a function, then it too has closure, etc, etc. In other words, closure is a fancy way of saying that functions can access their parental scope. 
+
+However, this is important to understand because you can invoke an outer function that does NOT have access to a particular variable and if the function invoked returns an inner function that does have access to that particular variable, then the variable can be modified or accssed. The variable persists, even after the calling function ends. 
+https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+
+Helps with modularization and encapsulation of code, and also to emulate the "private" aspects of other programming languages. 
+
 6. Describe asynchronous js vs async. 
 
 Code usually get executed in a linear fashion from top to bottom, with functions getting added to the callstack. Async javascript allows code to keep progressing, even as it waits for previously called functions to finish. This might be necessary due to a fetch request, or a timeout function, or something else that requires a long wait time.
